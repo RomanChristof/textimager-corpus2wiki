@@ -12,7 +12,7 @@ services:
       MYSQL_DATABASE: 'wikidb'
       MYSQL_USER: 'mediawiki'
       MYSQL_PASSWORD: 'wikidbpw'
-      MYSQL_ROOT_PASSWORD: 'wikiexporterpw'
+      MYSQL_ROOT_PASSWORD: 'wikiexporterpw12345.'
     container_name: 'mariadb'
     networks:
       - exchange
