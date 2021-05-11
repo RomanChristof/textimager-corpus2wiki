@@ -15,8 +15,8 @@ if($lang == ""){
 	$default_lan = 1;
 }
 $DEFAULT_PIPELINES = [
-	"en" => "LanguageToolSegmenter,LanguageToolLemmatizer,CoreNlpPosTagger,FastTextDDCMulLemmaNoPunctPOSNoFunctionwordsWithCategoriesTextImagerService,TagMeAPIAnnotator",
-	"de" => "LanguageToolSegmenter,LanguageToolLemmatizer,CoreNlpPosTagger,FastTextDDCMulLemmaNoPunctPOSNoFunctionwordsWithCategoriesTextImagerService,TagMeLocalAnnotator,MateMorphTagger",
+	"en" => "LanguageToolSegmenter,LanguageToolLemmatizer,CoreNlpPosTagger,SpaCyMultiTagger,FastTextDDCMulLemmaNoPunctPOSNoFunctionwordsWithCategoriesTextImagerService,TagMeAPIAnnotator",
+	"de" => "LanguageToolSegmenter,LanguageToolLemmatizer,CoreNlpPosTagger,SpaCyMultiTagger,FastTextDDCMulLemmaNoPunctPOSNoFunctionwordsWithCategoriesTextImagerService,TagMeLocalAnnotator,MateMorphTagger",
 ];
 if(array_key_exists($lang, $DEFAULT_PIPELINES)){
 	$pipeline = $DEFAULT_PIPELINES[$lang];
